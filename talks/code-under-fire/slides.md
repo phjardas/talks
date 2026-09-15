@@ -30,7 +30,11 @@ Was Software-Teams von der Feuerwehr über<br/>Führung, Resilienz und Incident 
 </div>
 
 <div class="mt-6 opacity-80">
-Philipp Jardas · Lead Software Engineer · codecentric
+Philipp Jardas
+</div>
+
+<div class="grid justify-center mt-4">
+<img src="./assets/codecentric-white.svg" alt="codecentric" class="w-40" />
 </div>
 
 </div>
@@ -111,16 +115,24 @@ knapp 200 Einsätze im Jahr
 </div>
 
 ---
+layout: image-right
+image: /durchatmen.jpeg
+---
 
 # Kognitiver Tunnelfokus
 
-**Stress senkt den IQ.**
+- Stress + Adrenalin = Logik kaputt
+- Kein Fehler. Das ist das Tier in uns.
+- In diesem Zustand triffst du keine guten Entscheidungen.
+- Aber: Das Nervensystem lässt sich beeinflussen durch bewusste Atmung. Runterkommen. Achtsamkeit.
 
-Hektik erzeugt Fehler.
+<div class="mt-10">
 
-> **Feuerwehrleute rennen nie.**
+> ### Feuerwehrleute rennen nicht
 >
 > Slow is smooth, smooth is fast.
+
+</div>
 
 ---
 layout: image
@@ -148,10 +160,13 @@ Erst die Lage erkunden, dann handeln.
 </div>
 
 ---
+layout: image
+image: /auftrag.jpeg
+---
 
-<div class="grid cols-2 h-100 items-center">
+<div class="grid w-full h-full justify-end items-center">
 
-<div>
+<div class="bg-black/70 rounded-xl p-10">
 
 <div class="inline-block bg-red/80 text-black px-2 rounded text-sm mb-1">
 Prinzip 2
@@ -161,25 +176,13 @@ Prinzip 2
 
 **Führung über Ziele und Ressourcen**
 
-Der Einsatzleiter sagt **was**, nicht **wie**.
+Der Einsatzleiter sagt nicht **WIE**, sondern **WAS**.
 
 > **"Angriffstrupp zur Brandbekämpfung mit dem 1. Rohr ins 2. OG vor!"**
->
-> Nicht: "Halte den Schlauch 30 Grad nach links."
 
-</div>
+Nicht: "Halte den Schlauch 30 Grad nach links."
 
-<div v-click class="bg-white/10 p-6 rounded-xl">
-
-## Für den Incident Room
-
-Kein Mikromanagement.
-
-Incident Commander:in setzt das Ziel.
-
-Spezialist:innen wählen autonom die Mittel.
-
-Selbstständige Meldungen nach oben.
+Wichtig: Selbstständige Meldungen nach oben.
 
 </div>
 
@@ -215,22 +218,45 @@ Für dein übermüdetes 3-Uhr-nachts-Ich.
 
 # Kurz und knackig
 
-<v-clicks>
+<div class="grid grid-cols-2 gap-4 mt-8">
 
-- **Riegelstellung**  
-  Den Brand eindämmen, bevor er überspringt.  
-  Isolation via Circuit Breaker & Bulkheads.
-- **Nach dem Einsatz ist vor dem Einsatz**  
-  Sofort Einsatzbereitschaft wiederherstellen.  
-  Provisorien direkt aufräumen, nicht "irgendwann".
-- **Erfahrung lässt sich nur durch noch mehr Erfahrung ersetzen**  
-  Drills unter echten Bedingungen. Immer wieder.  
-  Wenn eine Übung gut lief, war sie zu einfach.
-- **Blameless Post-Mortem**  
-  Aus Fehlern lernen statt Schuldige suchen.  
-  Resilienz wächst aus Ehrlichkeit und Vertrauen.
+<div v-click class="p-4 rounded border-l-4 border-red-500 bg-red-500/10">
 
-</v-clicks>
+### Riegelstellung
+
+Den Brand eindämmen, bevor er überspringt.
+Isolation via Circuit Breaker & Bulkheads.
+
+</div>
+
+<div v-click class="p-4 rounded border-l-4 border-red-500 bg-red-500/10">
+
+### Nach dem Einsatz ist vor dem Einsatz
+
+Sofort Einsatzbereitschaft wiederherstellen.
+Provisorien direkt aufräumen, nicht "irgendwann".
+
+</div>
+
+<div v-click class="p-4 rounded border-l-4 border-red-500 bg-red-500/10">
+
+### Erfahrung sammeln
+
+Drills unter echten Bedingungen. Immer wieder.
+Wenn eine Übung gut lief, war sie zu einfach.
+
+</div>
+
+<div v-click class="p-4 rounded border-l-4 border-red-500 bg-red-500/10">
+
+### Blameless Post-Mortem
+
+Aus Fehlern lernen statt Schuldige suchen.
+Resilienz wächst aus Ehrlichkeit und Vertrauen.
+
+</div>
+
+</div>
 
 ---
 layout: center
@@ -241,15 +267,15 @@ class: text-center
 
 <div class="grid grid-cols-1 gap-4 pt-8 text-left max-w-2xl mx-auto">
 
-<div v-click class="p-4 rounded border-l-4 border-red-500 bg-red-500/10">
+<div class="p-4 rounded border-l-4 border-red-500 bg-red-500/10">
 
 ### 1. Innehalten statt Hektik
 
-10-for-10: erst erkunden, dann handeln.
+Durchatmen. Erst erkunden, dann handeln. 10-for-10.
 
 </div>
 
-<div v-click class="p-4 rounded border-l-4 border-red-500 bg-red-500/10">
+<div class="p-4 rounded border-l-4 border-red-500 bg-red-500/10">
 
 ### 2. Autonomie stärken
 
@@ -257,7 +283,7 @@ Auftragstaktik: Ziel vorgeben, Ausführung freigeben.
 
 </div>
 
-<div v-click class="p-4 rounded border-l-4 border-red-500 bg-red-500/10">
+<div class="p-4 rounded border-l-4 border-red-500 bg-red-500/10">
 
 ### 3. Notfall-Tools vereinfachen
 
