@@ -39,6 +39,8 @@ jobs:
 
       - run: pnpm build
 
+      - run: pnpm bundle
+
       - uses: actions/configure-pages@v6
 
       - uses: actions/upload-pages-artifact@v5
