@@ -38,9 +38,11 @@ Philipp Jardas · Lead Software Engineer · codecentric
 </div>
 
 ---
+
 layout: image
 image: /0300.jpeg
 class: text-center
+
 ---
 
 <div class="h-full flex flex-col justify-end pb-12">
@@ -72,8 +74,10 @@ Schnell ein Kommando eingetippt.
 </div>
 
 ---
+
 layout: image
 image: /split.jpeg
+
 ---
 
 <div class="h-full w-full flex items-center justify-between">
@@ -123,8 +127,10 @@ Hektik erzeugt Fehler.
 > Slow is smooth, smooth is fast.
 
 ---
+
 layout: image
 image: /huddle.jpeg
+
 ---
 
 <div class="h-full flex flex-col justify-end pb-12">
@@ -212,8 +218,8 @@ Für dein übermüdetes 3-Uhr-nachts-Ich.
 </div>
 
 ---
-layout: default
----
+
+## layout: default
 
 # Kurz und knackig
 
@@ -225,18 +231,20 @@ layout: default
 - **Nach dem Einsatz ist vor dem Einsatz**  
   Sofort Einsatzbereitschaft wiederherstellen.  
   Provisorien direkt aufräumen, nicht "irgendwann".
-- **Erfahrung lässt sich nur durch noch mehr Erfahrung ersetzen**   
+- **Erfahrung lässt sich nur durch noch mehr Erfahrung ersetzen**  
   Drills unter echten Bedingungen. Immer wieder.  
   Wenn eine Übung gut lief, war sie zu einfach.
-- **Blameless Post-Mortem**   
+- **Blameless Post-Mortem**  
   Aus Fehlern lernen statt Schuldige suchen.  
   Resilienz wächst aus Ehrlichkeit und Vertrauen.
 
 </v-clicks>
 
 ---
+
 layout: center
 class: text-center
+
 ---
 
 # Fazit
@@ -270,8 +278,10 @@ KISD: der Big Red Button für 3 Uhr nachts.
 </div>
 
 ---
+
 layout: image
 image: /sunset.jpeg
+
 ---
 
 <div class="w-auto grid justify-end items-start gap-4">
@@ -282,9 +292,9 @@ image: /sunset.jpeg
 
 **Slides**
 
-<QRCode :width="250" :height="250" :margin="0" type="svg" data="https://jardas.de/talks/code-under-fire/" />
+<QRCode :width="250" :height="250" :margin="0" type="svg" data="https://talks.jardas.de/code-under-fire/" />
 
-<div class="text-sm text-black/75 mt-2">jardas.de/talks/code-under-fire/</div>
+<div class="text-sm text-black/75 mt-2">talks.jardas.de/code-under-fire/</div>
 
 </div>
 
