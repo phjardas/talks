@@ -76,7 +76,6 @@ Philipp Jardas
 <div class="text-gray-600">
   Velocity metrics soar while developer flow collapses.
   <div class="text-xs text-black/50 mt-2">
-    <a href="https://reclaim.ai/customers/vella">Vella, 2026</a>;
     <a href="https://www.researchgate.net/publication/368473822_The_Impact_of_AI_on_Developer_Productivity_Evidence_from_GitHub_Copilot">Peng et al., 2023</a>;
     <a href="https://economics.mit.edu/sites/default/files/inline-files/draft_copilot_experiments.pdf">MIT Economics, 2025</a>
   </div>
