@@ -19,12 +19,12 @@ class: text-center
 
 # 10x More Productive<br/>10x More Exhausted
 
-<div class="text-2xl mt-4">
-Surviving the Era of Agentic Coding
-</div>
+## Surviving the Era of Agentic Coding
 
-<div class="mt-16 text-lg">
-Philipp Jardas · Lead Software Engineer · codecentric
+Philipp Jardas
+
+<div class="grid justify-center mt-10">
+<img src="./assets/codecentric-white.svg" alt="codecentric" class="w-50" />
 </div>
 
 ---
@@ -105,7 +105,7 @@ Philipp Jardas · Lead Software Engineer · codecentric
 
 ---
 layout: image-right
-image: /assets/radar.jpeg
+image: /assets/tired.jpeg
 ---
 
 # Human Factors in Automation
@@ -113,6 +113,36 @@ image: /assets/radar.jpeg
 - **Automation-Induced Complacency**: visual vigilance degrades when watching systems that work correctly 95% of the time. <span class="text-xs text-black/50">[Causse et al., 2025](https://www.tandfonline.com/doi/abs/10.1080/1463922X.2025.2475431)</span>
 - **The Audit Trap**: humans are poorly equipped to scan hundreds of lines of syntactically perfect text for a silent 5% logical anomaly.
 - **Role Demotion**: from focused puzzle builder to high-vigilance air traffic controller.
+
+---
+layout: image-left
+image: /assets/radar.jpeg
+---
+
+# Finding a Precedent
+
+Nuclear control rooms? Financial trading?
+
+**✅ Aviation and air traffic control!**
+
+<div class="grid gap-3">
+
+<div class="p-4 rounded-lg border border-gray-200 bg-gray-50">
+<div class="font-bold">High reliability, rare failure</div>
+<div class="text-gray-600">Systems that work almost every time; humans there for the exception.</div>
+</div>
+
+<div class="p-4 rounded-lg border border-gray-200 bg-gray-50">
+<div class="font-bold">Vigilance decrement</div>
+<div class="text-gray-600">Watching correctly-functioning systems erodes attention.</div>
+</div>
+
+<div class="p-4 rounded-lg border border-gray-200 bg-gray-50">
+<div class="font-bold">Asymmetric consequences</div>
+<div class="text-gray-600">A missed anomaly costs more than the routine cases were worth.</div>
+</div>
+
+</div>
 
 ---
 layout: image-right
@@ -126,7 +156,12 @@ image: /assets/airspace.jpeg
 Air traffic controllers manage airspace volume by dividing territory into sectors, protecting cognitive limits.
 
 <div class="mt-6 border-l-4 border-red-500 bg-red-50 px-6 py-4">
-<strong>Action:</strong> lock down critical business logic. Keep agents restricted strictly to ephemeral, sandboxed branches.
+
+### Action
+
+Lock down critical business logic, eg. humans-only domain layer.
+
+Keep agents restricted strictly to ephemeral, sandboxed branches.
 </div>
 
 ---
