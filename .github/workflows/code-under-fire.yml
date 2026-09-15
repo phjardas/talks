@@ -27,7 +27,18 @@ jobs:
           node-version-file: code-under-fire/package.json
           cache: pnpm
 
-      - run: pnpm install --frozen-lockfile
+      - name: Prepare pnpm
+        run: |
+          corepack enable pnpm
+          pnpm config set store-dir .pnpm-store
+
+      - name: Cache dependencies
+        uses: actions/cache@v5
+        with:
+          path: .pnpm-store
+          key: pnpm-${{ hashFiles('code-under-fire/pnpm-lock.yaml') }}
+
+      - run: pnpm install --prefer-offline --frozen-lockfile
         working-directory: code-under-fire
 
       - run: pnpm build --base /${{ github.event.repository.name }}/
