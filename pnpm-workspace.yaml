@@ -1,5 +1,5 @@
 packages:
-  - code-under-fire
+  - talks/*
 
 allowBuilds:
   esbuild: true
