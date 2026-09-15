@@ -156,12 +156,14 @@ image: /airspace.jpeg
 Air traffic controllers manage airspace volume by dividing territory into sectors, protecting cognitive limits.
 
 <div class="mt-6 border-l-4 border-red-500 bg-red-50 px-6 py-4">
-
-### Action
-
 Lock down critical business logic, eg. humans-only domain layer.
 
 Keep agents restricted strictly to ephemeral, sandboxed branches.
+</div>
+
+<div class="flex gap-1 mt-4">
+<div class="inline-block text-xs font-semibold tracking-wide uppercase text-gray-500 border border-gray-300 rounded-full px-3 py-1">Agent Sandboxing</div>
+<div class="inline-block text-xs font-semibold tracking-wide uppercase text-gray-500 border border-gray-300 rounded-full px-3 py-1">Harness Engineering</div>
 </div>
 
 ---
@@ -170,7 +172,7 @@ Keep agents restricted strictly to ephemeral, sandboxed branches.
 
 **Tactic 2: Asynchronous Batching**
 
-<div class="grid grid-cols-2 gap-6 mt-8">
+<div class="grid grid-cols-2 gap-6 my-8">
 
 <div class="border-2 border-red-500 rounded-lg p-6 bg-red-50">
 <div class="text-red-700 font-bold text-lg mb-2">Synchronous Stream Watching</div>
@@ -184,19 +186,40 @@ Keep agents restricted strictly to ephemeral, sandboxed branches.
 
 </div>
 
+> **Hint**
+>
+> Give your agent [Superpowers](https://github.com/obra/superpowers/) for SDD and TDD.
+
+<div class="flex gap-1 mt-4">
+<div class="inline-block text-xs font-semibold tracking-wide uppercase text-gray-500 border border-gray-300 rounded-full px-3 py-1">Spec-Driven Development</div>
+<div class="inline-block text-xs font-semibold tracking-wide uppercase text-gray-500 border border-gray-300 rounded-full px-3 py-1">Loop Engineering</div>
+</div>
+
+---
+layout: two-cols-header
 ---
 
 # Offloading Audit Rigor to Automated Monitors
 
-**Tactic 3: Dual-Channel Architecture**
+::left::
+
+<img src="/assets/coderabbit.png" class="w-full" />
+
+::right::
+
+<div class="pl-8">
+
+## Dual-Channel Architecture
 
 Adopt safety-critical avionics standards: a command channel and a monitor channel.
 
 Let an automated review engine critique the AI coder asynchronously.
 
-<img src="/assets/coderabbit.png" class="w-1/2" />
-
 **Act as the final judge, not the line-by-line auditor.**
+
+<div class="inline-block text-xs font-semibold tracking-wide uppercase text-gray-500 border border-gray-300 rounded-full px-3 py-1 mb-2">Antagonistic Agents</div>
+
+</div>
 
 ---
 
@@ -226,6 +249,8 @@ Engineering optimizes aggressively for finite compute: cache sizes, memory limit
 True engineering maturity means designing pipelines that protect the cognitive ergonomics of the human mind.
 </div>
 
+<div class="inline-block text-xs font-semibold tracking-wide uppercase text-gray-500 border border-gray-300 rounded-full px-3 py-1 mt-4">Context Engineering 😏</div>
+
 ---
 layout: image
 image: /zen.webp
@@ -237,17 +262,17 @@ image: /zen.webp
 
 <div class="border border-gray-500 rounded-lg p-5">
 <div class="text-xl font-bold text-gray-500">01</div>
-<div class="font-bold text-gray-800">Sectorize Boundaries</div>
+<div class="font-bold text-gray-800">Agent Sandboxing</div>
 </div>
 
 <div class="border border-gray-500 rounded-lg p-5">
 <div class="text-xl font-bold text-gray-500">02</div>
-<div class="font-bold text-gray-800">Batch Interactions</div>
+<div class="font-bold text-gray-800">Spec-Driven Development</div>
 </div>
 
 <div class="border border-gray-500 rounded-lg p-5">
 <div class="text-xl font-bold text-gray-500">03</div>
-<div class="font-bold text-gray-800">Automate Auditing</div>
+<div class="font-bold text-gray-800">Antagonistic Agents</div>
 </div>
 
 </div>
