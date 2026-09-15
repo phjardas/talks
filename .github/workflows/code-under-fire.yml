@@ -26,7 +26,6 @@ jobs:
       - uses: actions/setup-node@v7
         with:
           node-version-file: code-under-fire/package.json
-          cache: pnpm
 
       - name: Prepare pnpm
         run: |
