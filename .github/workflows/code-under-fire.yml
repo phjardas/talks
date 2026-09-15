@@ -1,0 +1,50 @@
+name: Code Under Fire
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - code-under-fire/**
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: code-under-fire
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: code-under-fire/package.json
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+        working-directory: code-under-fire
+
+      - run: pnpm build --base /${{ github.event.repository.name }}/
+        working-directory: code-under-fire
+
+      - uses: actions/configure-pages@v6
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: code-under-fire/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
