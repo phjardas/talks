@@ -1,0 +1,5 @@
+packages:
+  - code-under-fire
+
+allowBuilds:
+  esbuild: true
