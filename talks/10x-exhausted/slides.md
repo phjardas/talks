@@ -13,7 +13,7 @@ colorSchema: light
 addons:
   - slidev-addon-qrcode
 layout: cover
-background: /assets/title.jpeg
+background: /title.jpeg
 class: text-center
 ---
 
@@ -105,7 +105,7 @@ Philipp Jardas
 
 ---
 layout: image-right
-image: /assets/tired.jpeg
+image: /tired.jpeg
 ---
 
 # Human Factors in Automation
@@ -116,7 +116,7 @@ image: /assets/tired.jpeg
 
 ---
 layout: image-left
-image: /assets/radar.jpeg
+image: /radar.jpeg
 ---
 
 # Finding a Precedent
@@ -146,7 +146,7 @@ Nuclear control rooms? Financial trading?
 
 ---
 layout: image-right
-image: /assets/airspace.jpeg
+image: /airspace.jpeg
 ---
 
 # Defending Working Memory via Spatial Boundaries
@@ -228,7 +228,7 @@ True engineering maturity means designing pipelines that protect the cognitive e
 
 ---
 layout: image
-image: /assets/zen.webp
+image: /zen.webp
 ---
 
 # Reclaim Your Developer Zen
