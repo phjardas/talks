@@ -190,42 +190,39 @@ Keep agents restricted strictly to ephemeral, sandboxed branches.
 
 **Tactic 3: Dual-Channel Architecture**
 
-Adopt safety-critical avionics standards (DO-178C Level A): a command channel and a monitor channel.
+Adopt safety-critical avionics standards: a command channel and a monitor channel.
 
-<div class="font-mono text-sm bg-gray-50 border border-gray-200 rounded-lg p-6 mt-4 text-center">
+Let an automated review engine critique the AI coder asynchronously.
 
-```
- AI Coding Agent  ──▶  Feature Branch
-                            │
-                            ▼
-              Automated Monitor (CodeRabbit)
-                    (async audit)
-                            │
-                            ▼
-                Human Engineer (Judge)
-              reviews only the discrepancies
-```
+<img src="/assets/coderabbit.png" class="w-1/2" />
 
-</div>
-
-<div class="mt-6 border-l-4 border-gray-900 bg-gray-50 px-6 py-4">
-<span class="font-bold">Key takeaway:</span> let an automated review engine critique the AI coder asynchronously. Act as the final judge, not the line-by-line auditor.
-</div>
+**Act as the final judge, not the line-by-line auditor.**
 
 ---
 
 # Human Cognitive Ergonomics
 
-```ts
-interface DeveloperOperatingSystem {
-  workingMemory: "Finite";
-  contextSwitchCost: "High Latency";
-  dopamineSource: "Incremental Craftsmanship";
-  automationStrategy: "Intentional Orchestration";
-}
-```
+Engineering optimizes aggressively for finite compute: cache sizes, memory limits, thread pools.
 
-<div class="mt-8 border-l-4 border-gray-900 pl-6 text-xl text-gray-800">
+**The human doing the auditing gets treated as if working memory were infinite. However:**
+
+<div class="grid grid-cols-2 gap-6 mt-8">
+
+<div class="border-2 border-gray-300 rounded-lg p-6 text-center">
+<div class="text-4xl font-bold text-gray-900">7</div>
+<div class="text-gray-600 mt-2">items held in working memory at once</div>
+</div>
+
+<div class="border-2 border-gray-300 rounded-lg p-6 text-center">
+<div class="text-4xl font-bold text-gray-900">23 min</div>
+<div class="text-gray-600 mt-2">to recover full focus after a context switch</div>
+</div>
+
+</div>
+
+<div class="text-xs text-black/50 mt-2 text-right"><a href="https://ics.uci.edu/~gmark/chi08-mark.pdf">Gloria Mark, UC Irvine</a></div>
+
+<div class="mt-6 border-l-4 border-gray-900 pl-6 text-xl text-gray-800">
 True engineering maturity means designing pipelines that protect the cognitive ergonomics of the human mind.
 </div>
 
