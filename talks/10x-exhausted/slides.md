@@ -19,3 +19,7 @@ layout: cover
 ---
 
 # 10x More Productive, 10x More Exhausted
+
+How we survive the age of agentic coding
+
+Philipp Jardas · Lead Software Engineer · codecentric

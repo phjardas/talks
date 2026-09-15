@@ -38,11 +38,9 @@ Philipp Jardas · Lead Software Engineer · codecentric
 </div>
 
 ---
-
 layout: image
 image: /0300.jpeg
 class: text-center
-
 ---
 
 <div class="h-full flex flex-col justify-end pb-12">
@@ -74,10 +72,8 @@ Schnell ein Kommando eingetippt.
 </div>
 
 ---
-
 layout: image
 image: /split.jpeg
-
 ---
 
 <div class="h-full w-full flex items-center justify-between">
@@ -127,10 +123,8 @@ Hektik erzeugt Fehler.
 > Slow is smooth, smooth is fast.
 
 ---
-
 layout: image
 image: /huddle.jpeg
-
 ---
 
 <div class="h-full flex flex-col justify-end pb-12">
@@ -219,8 +213,6 @@ Für dein übermüdetes 3-Uhr-nachts-Ich.
 
 ---
 
-## layout: default
-
 # Kurz und knackig
 
 <v-clicks>
@@ -241,10 +233,8 @@ Für dein übermüdetes 3-Uhr-nachts-Ich.
 </v-clicks>
 
 ---
-
 layout: center
 class: text-center
-
 ---
 
 # Fazit
@@ -278,10 +268,8 @@ KISD: der Big Red Button für 3 Uhr nachts.
 </div>
 
 ---
-
 layout: image
 image: /sunset.jpeg
-
 ---
 
 <div class="w-auto grid justify-end items-start gap-4">
