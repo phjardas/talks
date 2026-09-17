@@ -2,7 +2,8 @@
 theme: default
 title: 10x More Productive, 10x More Exhausted
 info: |
-  ## 10x More Productive, 10x More Exhausted
+  10x More Productive, 10x More Exhausted
+  
   Surviving the Era of Agentic Coding
 
   Philipp Jardas, codecentric

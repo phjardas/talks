@@ -2,7 +2,8 @@
 theme: default
 title: Code Under Fire
 info: |
-  ## Code Under Fire
+  Code Under Fire
+  
   Was Software-Teams von der Feuerwehr über Führung, Resilienz und Incident Management lernen können.
 
   Philipp Jardas, codecentric
