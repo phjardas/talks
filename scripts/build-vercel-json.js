@@ -1,10 +1,10 @@
 import { readdir, readFile, writeFile } from "node:fs/promises";
 import { format } from "prettier";
 
-async function createRedirects() {
+async function createRewrites() {
   const talks = await readdir("talks");
 
-  const redirects = talks.map(async (talk) => {
+  const rewrites = talks.map(async (talk) => {
     const redirectsContent = await readFile(
       `talks/${talk}/dist/_redirects`,
       "utf-8",
@@ -25,7 +25,7 @@ async function createRedirects() {
     });
   });
 
-  return (await Promise.all(redirects)).flat();
+  return (await Promise.all(rewrites)).flat();
 }
 
 const vercelConfig = {
@@ -33,7 +33,7 @@ const vercelConfig = {
   installCommand: "pnpm install --frozen-lockfile",
   buildCommand: "pnpm build && pnpm bundle",
   outputDirectory: "dist",
-  redirects: await createRedirects(),
+  rewrites: await createRewrites(),
 };
 
 const json = await format(JSON.stringify(vercelConfig), {
