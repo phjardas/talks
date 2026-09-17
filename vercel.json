@@ -1,0 +1,18 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "pnpm install --frozen-lockfile",
+  "buildCommand": "pnpm build && pnpm bundle",
+  "outputDirectory": "dist",
+  "redirects": [
+    {
+      "source": "/10x-exhausted/(.*)",
+      "destination": "/10x-exhausted/index.html",
+      "permanent": false
+    },
+    {
+      "source": "/code-under-fire/(.*)",
+      "destination": "/code-under-fire/index.html",
+      "permanent": false
+    }
+  ]
+}
