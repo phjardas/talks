@@ -49,27 +49,11 @@ class: text-center
 
 <div class="h-full flex flex-col justify-end pb-12">
 
-<div class="bg-black/60 rounded-xl px-12 py-10 inline-block">
+<div class="bg-black/60 rounded-xl px-12 py-10">
 
 # 03:00 Uhr nachts
 
-Der Pager reißt dich aus dem Schlaf.
-
-Ein Blick auf die Logfiles – die Buchstaben verschwimmen.
-
-Schnell ein Kommando eingetippt.
-
-<v-click>
-
-<div class="text-red">
-
-## BAAAM!
-
-</div>
-
-**Aus einem Ausfall werden fünf.**
-
-</v-click>
+Das Telefon klingelt.
 
 </div>
 
@@ -84,21 +68,25 @@ image: /split.jpeg
 
 <div class="bg-black/60 rounded-lg p-6 max-w-xs">
 
-### <span class="text-red-400">Philipp Jardas</span>
+### <span class="text-red-300">Philipp Jardas</span>
 
 **Lead Software Engineer**  
-**codecentric**
+
+<img src="./assets/codecentric-white.svg" class="w-35"/>
 
 Cloud-native full-stack enthusiast
-TypeScript + AWS = ❤️
 
-Startup Culture, Lean Product Development, Speedboat Unit Captain, Trainer Gewaltfreie Kommunikation
+TypeScript + React + AWS = ❤️
+
+Startup Culture, Lean Product Development, Speedboat Unit Captain
+
+Trainer Gewaltfreie Kommunikation, Meetup Host, Speaker
 
 </div>
 
-<div class="bg-white/60 text-black rounded-lg p-6 max-w-xs">
+<div class="bg-red-100/70 text-black rounded-lg p-6 max-w-xs">
 
-### <span class="text-red-600">Philipp Jardas</span>
+### <span class="text-red-700">Philipp Jardas</span>
 
 **Hauptfeuerwehrmann**  
 **Freiw. Feuerwehr Gelnhausen**
@@ -215,79 +203,176 @@ Für dein übermüdetes 3-Uhr-nachts-Ich.
 </div>
 
 ---
+layout: image
+image: /riegelstellung.jpeg
+---
 
-# Kurz und knackig
+<div class="bg-black/70 rounded-xl p-10">
 
-<div class="grid grid-cols-2 gap-4 mt-8">
+<div class="inline-block bg-red/80 text-black px-2 rounded text-sm mb-1">
+Prinzip 4
+</div>
 
-<div v-click class="p-4 rounded border-l-4 border-red-500 bg-red-500/10">
+# Brandabschnitte
 
-### Riegelstellung
+**Proaktiv Domino-Effekte vermeiden**
 
-Den Brand eindämmen, bevor er überspringt.
-Isolation via Circuit Breaker & Bulkheads.
+<div class="grid cols-2 items-center gap-8">
+
+<div>
+
+Vorbeugender Brandschutz unterteilt große Gebäude in Brandabschnitte zur passiven Verzögerung der Brand- und Rauchausbreitung.
+
+Aktive Variante: Riegelstellung schützt Nachbargebäude, wo die Architektur es nicht tut. Brandschneisen verhindern die Ausbreitung von Vegetationsbränden.
 
 </div>
 
-<div v-click class="p-4 rounded border-l-4 border-red-500 bg-red-500/10">
+<div class="p-6 rounded border-l-4 border-red-500 bg-red-500/10">
 
-### Nach dem Einsatz ist vor dem Einsatz
+### Software
 
-Sofort Einsatzbereitschaft wiederherstellen.
-Provisorien direkt aufräumen, nicht "irgendwann".
+Passiv: Bulkheads, Circuit Breakers.
 
-</div>
-
-<div v-click class="p-4 rounded border-l-4 border-red-500 bg-red-500/10">
-
-### Erfahrung sammeln
-
-Drills unter echten Bedingungen. Immer wieder.
-Wenn eine Übung gut lief, war sie zu einfach.
-
-</div>
-
-<div v-click class="p-4 rounded border-l-4 border-red-500 bg-red-500/10">
-
-### Blameless Post-Mortem
-
-Aus Fehlern lernen statt Schuldige suchen.
-Resilienz wächst aus Ehrlichkeit und Vertrauen.
+Aktiv: Kill-Switch, Traffic umleiten, Pod/Node abschießen.
 
 </div>
 
 </div>
+
+</div>
+
+---
+layout: image-right
+image: /danach.jpeg
+---
+
+<div class="inline-block bg-red/80 text-black px-2 rounded text-sm mb-1">
+Prinzip 5
+</div>
+
+# Nach dem Einsatz ist vor dem Einsatz
+
+**Einsatzbereitschaft ist keine Kür**
+
+Schläuche rollen, Flaschen tauschen, Material auffüllen. Sofort, nicht irgendwann. Der nächste Einsatz kommt, bevor du fertig bist.
+
+Software: Feature-Flags zurücksetzen, Hotfixes nachziehen, Monitoring wiederherstellen, Debug-Code aufräumen. Provisorien aus dem Incident sind keine Backlog-Tickets für später.
+
+---
+layout: image
+image: /grossuebung.jpeg
+class: grid items-center
+---
+
+<div class="bg-black/70 rounded-xl p-10">
+
+<div class="inline-block bg-red/80 text-black px-2 rounded text-sm mb-1">
+Prinzip 6
+</div>
+
+# Erfahrung sammeln
+
+**Drills unter möglichst echten Bedingungen**
+
+<div class="grid cols-2 gap-20 items-end">
+
+<div>
+
+Prozesse aus der Theorie in die Praxis holen. Muskelgedächtnis trainieren. Schwachstellen aufdecken. Kommunikation verbessern. Team-Zusammenhalt stärken.
+
+Gewöhnung führt zu Ruhe und Gelassenheit.
+
+</div>
+
+<div>
+
+### In der Software
+
+Chaos Engineering, GameDays, Incident-Simulationen.
+
+Regelmäßig, nicht erst nach dem ersten echten Ausfall.
+
+> **Wenn eine Übung gut lief, war sie zu einfach.**
+
+</div>
+
+</div>
+
+</div>
+
+---
+layout: image-right
+image: /nachbesprechung.jpeg
+---
+
+<div class="inline-block bg-red/80 text-black px-2 rounded text-sm mb-1">
+Prinzip 7
+</div>
+
+# Einsatz-Nachbesprechung
+
+**Aus Fehlern lernen statt Schuldige suchen**
+
+Was ist passiert? Was lief gut? Wo versagen Technik, Prozesse oder menschliche Fähigkeiten? Wo brauchen wir mehr Ausbildung? Wie verbessern wir unsere Prozesse? Wo liegen unsere Stärken, wo unsere Schwächen?
+
+Blameless Post-Mortems erfordern psychologische Sicherheit und konstruktive Fehlerkultur.
+
+Resilienz wächst aus Ehrlichkeit, nicht aus Angst.
 
 ---
 layout: center
 class: text-center
 ---
 
-# Fazit
+# Zusammenfassung
 
-<div class="grid grid-cols-1 gap-4 pt-8 text-left max-w-2xl mx-auto">
+<div class="grid grid-cols-2 gap-4 text-left max-w-2xl mx-auto">
 
-<div class="p-4 rounded border-l-4 border-red-500 bg-red-500/10">
+<div v-click class="p-4 pb-0 rounded border-l-4 border-red-500 bg-red-500/10">
 
-### 1. Innehalten statt Hektik
+#### 1. Innehalten statt Hektik
 
-Durchatmen. Erst erkunden, dann handeln. 10-for-10.
-
-</div>
-
-<div class="p-4 rounded border-l-4 border-red-500 bg-red-500/10">
-
-### 2. Autonomie stärken
-
-Auftragstaktik: Ziel vorgeben, Ausführung freigeben.
+Durchatmen. Ruhe ausstrahlen. Erst erkunden, dann handeln. 10-for-10.
 
 </div>
 
-<div class="p-4 rounded border-l-4 border-red-500 bg-red-500/10">
+<div v-click class="p-4 pb-0 rounded border-l-4 border-red-500 bg-red-500/10">
 
-### 3. Notfall-Tools vereinfachen
+#### 2. Autonomie stärken
+
+Auftragstaktik: Ziel vorgeben, Ausführung freigeben. Selbstständige Meldungen.
+
+</div>
+
+<div v-click class="p-4 pb-0 rounded border-l-4 border-red-500 bg-red-500/10">
+
+#### 3. Notfall-Tools vereinfachen
 
 KISD: der Big Red Button für 3 Uhr nachts.
+
+</div>
+
+<div v-click class="p-4 pb-0 rounded border-l-4 border-red-500 bg-red-500/10">
+
+#### 4. Proaktive Resilienz
+
+Passive Maßnahmen einbauen. Schadenbegrenzung durch Eindämmen.
+
+</div>
+
+<div v-click class="p-4 pb-0 rounded border-l-4 border-red-500 bg-red-500/10">
+
+#### 5. Nach dem Einsatz…
+
+Sofort aufräumen statt aufschieben.
+
+</div>
+
+<div v-click class="p-4 pb-0 rounded border-l-4 border-red-500 bg-red-500/10">
+
+#### 6. Der ewige Kreis
+
+Unter echten Bedingungen üben. Blameless Post-Mortems.
 
 </div>
 
@@ -313,5 +398,25 @@ image: /sunset.jpeg
 </div>
 
 <img src="./assets/codecentric-white.svg" alt="codecentric" class="w-80% mt-2" />
+
+</div>
+
+<div class="absolute top-10 left-10 grid gap-4">
+
+<div v-click class="bg-black/80 rounded-lg w-xs overflow-hidden shadow-md hover:shadow-xl relative">
+  <img src="./assets/diso.jpeg" class="w-full" />
+  <div class="p-4 grid gap-2 absolute bottom-0 w-full bg-gradient-to-b from-black/0 to-black/80 pt-8">
+    <div class="font-bold text-sm">Digitale Souveränität</div>
+    <div class="text-xs">Architektur für eine ungewisse Zukunft</div>
+  </div>
+</div>
+
+<div v-click class="bg-black/80 rounded-lg w-xs overflow-hidden shadow-md hover:shadow-xl relative">
+  <img src="./assets/10x-exhausted.jpeg" class="w-full" />
+  <div class="p-4 grid gap-2 absolute bottom-0 w-full bg-gradient-to-b from-black/0 to-black/80 pt-8">
+    <div class="font-bold text-sm">10x produktiver, 10x erschöpfter</div>
+    <div class="text-xs">Wie wir die Ära des agentischen Codens überleben</div>
+  </div>
+</div>
 
 </div>
