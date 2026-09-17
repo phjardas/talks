@@ -20,7 +20,6 @@ async function createRewrites() {
       return {
         source: source.replace(/\*/g, "(.*)"),
         destination,
-        permanent: false,
       };
     });
   });

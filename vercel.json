@@ -6,13 +6,11 @@
   "rewrites": [
     {
       "source": "/10x-exhausted/(.*)",
-      "destination": "/10x-exhausted/index.html",
-      "permanent": false
+      "destination": "/10x-exhausted/index.html"
     },
     {
       "source": "/code-under-fire/(.*)",
-      "destination": "/code-under-fire/index.html",
-      "permanent": false
+      "destination": "/code-under-fire/index.html"
     }
   ]
 }
