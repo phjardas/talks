@@ -3,7 +3,7 @@ theme: default
 title: Code Under Fire
 info: |
   Code Under Fire
-  
+
   Was Software-Teams von der Feuerwehr über Führung, Resilienz und Incident Management lernen können.
 
   Philipp Jardas, codecentric
@@ -16,6 +16,7 @@ fonts:
   weights: "400,600,800"
 addons:
   - slidev-addon-qrcode
+clickAnimation: fade
 layout: cover
 background: /title.jpeg
 ---
@@ -42,6 +43,16 @@ Philipp Jardas
 
 </div>
 
+<!--
+Mit einer Geschichte beginnen.
+
+In den 2010ern.
+
+Touristik-Startup.
+
+Nacht vor der ITB.
+-->
+
 ---
 layout: image
 image: /0300.jpeg
@@ -59,6 +70,28 @@ Das Telefon klingelt.
 </div>
 
 </div>
+
+<!--
+Das Telefon klingelt.
+
+Mein Chef ist dran. Panisch.
+
+Produktion steht still.
+
+Laptop auf, müde Augen.
+
+Debugging.
+
+Fehler gefunden.
+
+Ein einfacher Befehl.
+
+BAAAM: Über 1 TB Daten gelöscht.
+
+Backup
+
+Nochmal gut gegangen.
+-->
 
 ---
 layout: image
@@ -115,7 +148,7 @@ image: /durchatmen.jpeg
 - In diesem Zustand triffst du keine guten Entscheidungen.
 - Aber: Das Nervensystem lässt sich beeinflussen durch bewusste Atmung. Runterkommen. Achtsamkeit.
 
-<div class="mt-10">
+<div class="mt-10" v-click>
 
 > ### Feuerwehrleute rennen nicht
 >
@@ -169,9 +202,9 @@ Der Einsatzleiter sagt nicht **WIE**, sondern **WAS**.
 
 > **"Angriffstrupp zur Brandbekämpfung mit dem 1. Rohr ins 2. OG vor!"**
 
-Nicht: "Halte den Schlauch 30 Grad nach links."
+Hierarchische Abschnittsbildung
 
-Wichtig: Selbstständige Meldungen nach oben.
+Selbstständige Meldungen nach oben
 
 </div>
 
@@ -203,6 +236,12 @@ Für dein übermüdetes 3-Uhr-nachts-Ich.
 
 </div>
 
+<!--
+Storz-Kupplung: symmetrisch, verschiedene Größen
+
+Gas-Gewinde: unterschiedlich nach Art, brennbar links
+-->
+
 ---
 layout: image
 image: /riegelstellung.jpeg
@@ -228,7 +267,7 @@ Aktive Variante: Riegelstellung schützt Nachbargebäude, wo die Architektur es 
 
 </div>
 
-<div class="p-6 rounded border-l-4 border-red-500 bg-red-500/10">
+<div class="p-6 rounded border-l-4 border-red-500 bg-red-500/10" v-click>
 
 ### Software
 
@@ -241,6 +280,12 @@ Aktiv: Kill-Switch, Traffic umleiten, Pod/Node abschießen.
 </div>
 
 </div>
+
+<!--
+Bulkheads: Thread-Pools, Connection-Pools, Prozesse, Instanzen.
+
+Circuit Breaker: Highwater-Mark, Backpressure, Backoff.
+-->
 
 ---
 layout: image-right
@@ -257,7 +302,13 @@ Prinzip 5
 
 Schläuche rollen, Flaschen tauschen, Material auffüllen. Sofort, nicht irgendwann. Der nächste Einsatz kommt, bevor du fertig bist.
 
-Software: Feature-Flags zurücksetzen, Hotfixes nachziehen, Monitoring wiederherstellen, Debug-Code aufräumen. Provisorien aus dem Incident sind keine Backlog-Tickets für später.
+<div class="p-6 rounded border-l-4 border-red-500 bg-red-500/10" v-click>
+
+### Software
+
+Feature-Flags zurücksetzen, Hotfixes nachziehen, Monitoring wiederherstellen, Debug-Code aufräumen. Provisorien aus dem Incident sind keine Backlog-Tickets für später.
+
+</div>
 
 ---
 layout: image
@@ -267,6 +318,10 @@ class: grid items-center
 
 <div class="bg-black/70 rounded-xl p-10">
 
+<div class="grid cols-2 gap-20 items-end">
+
+<div>
+
 <div class="inline-block bg-red/80 text-black px-2 rounded text-sm mb-1">
 Prinzip 6
 </div>
@@ -275,25 +330,21 @@ Prinzip 6
 
 **Drills unter möglichst echten Bedingungen**
 
-<div class="grid cols-2 gap-20 items-end">
-
-<div>
-
 Prozesse aus der Theorie in die Praxis holen. Muskelgedächtnis trainieren. Schwachstellen aufdecken. Kommunikation verbessern. Team-Zusammenhalt stärken.
 
 Gewöhnung führt zu Ruhe und Gelassenheit.
 
 </div>
 
-<div>
+<div class="p-6 rounded border-l-4 border-red-500 bg-red-500/10" v-click>
 
-### In der Software
+### Software
 
 Chaos Engineering, GameDays, Incident-Simulationen.
 
-Regelmäßig, nicht erst nach dem ersten echten Ausfall.
+Wenn eine Übung gut lief, war sie zu einfach.
 
-> **Wenn eine Übung gut lief, war sie zu einfach.**
+Regelmäßig, nicht erst nach dem ersten echten Ausfall.
 
 </div>
 
@@ -320,16 +371,34 @@ Blameless Post-Mortems erfordern psychologische Sicherheit und konstruktive Fehl
 
 Resilienz wächst aus Ehrlichkeit, nicht aus Angst.
 
+<!--
+Das Kernstück funktionierender Krisen-Kultur.
+
+GFK eine große Hilfe.
+
+Externe Moderation.
+-->
+
 ---
 layout: center
 class: text-center
 ---
 
+<style>
+  .slidev-vclick-target {
+    @apply bg-white/10 border-white/50 color-white/80;
+  }
+
+  .slidev-vclick-current {
+    @apply bg-red/20 border-red/50 color-white;
+  }
+</style>
+
 # Zusammenfassung
 
 <div class="grid grid-cols-2 gap-4 text-left max-w-2xl mx-auto">
 
-<div v-click class="p-4 pb-0 rounded border-l-4 border-red-500 bg-red-500/10">
+<div v-click class="p-4 pb-0 rounded border-l-4">
 
 #### 1. Innehalten statt Hektik
 
@@ -337,7 +406,7 @@ Durchatmen. Ruhe ausstrahlen. Erst erkunden, dann handeln. 10-for-10.
 
 </div>
 
-<div v-click class="p-4 pb-0 rounded border-l-4 border-red-500 bg-red-500/10">
+<div v-click class="p-4 pb-0 rounded border-l-4">
 
 #### 2. Autonomie stärken
 
@@ -345,7 +414,7 @@ Auftragstaktik: Ziel vorgeben, Ausführung freigeben. Selbstständige Meldungen.
 
 </div>
 
-<div v-click class="p-4 pb-0 rounded border-l-4 border-red-500 bg-red-500/10">
+<div v-click class="p-4 pb-0 rounded border-l-4">
 
 #### 3. Notfall-Tools vereinfachen
 
@@ -353,7 +422,7 @@ KISD: der Big Red Button für 3 Uhr nachts.
 
 </div>
 
-<div v-click class="p-4 pb-0 rounded border-l-4 border-red-500 bg-red-500/10">
+<div v-click class="p-4 pb-0 rounded border-l-4">
 
 #### 4. Proaktive Resilienz
 
@@ -361,7 +430,7 @@ Passive Maßnahmen einbauen. Schadenbegrenzung durch Eindämmen.
 
 </div>
 
-<div v-click class="p-4 pb-0 rounded border-l-4 border-red-500 bg-red-500/10">
+<div v-click class="p-4 pb-0 rounded border-l-4">
 
 #### 5. Nach dem Einsatz…
 
@@ -369,7 +438,7 @@ Sofort aufräumen statt aufschieben.
 
 </div>
 
-<div v-click class="p-4 pb-0 rounded border-l-4 border-red-500 bg-red-500/10">
+<div v-click class="p-4 pb-0 rounded border-l-4">
 
 #### 6. Der ewige Kreis
 
