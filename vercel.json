@@ -15,6 +15,10 @@
     {
       "source": "/digitale-souveraenitaet/(.*)",
       "destination": "/digitale-souveraenitaet/index.html"
+    },
+    {
+      "source": "/digitale-souveraenitaet-kurz/(.*)",
+      "destination": "/digitale-souveraenitaet-kurz/index.html"
     }
   ]
 }
