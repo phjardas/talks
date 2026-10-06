@@ -1,0 +1,103 @@
+@font-face { font-family:'Rubik'; font-weight:300; font-style:normal;
+  src:url('/theme/fonts/Rubik-Light.ttf') format('truetype'); font-display:swap; }
+@font-face { font-family:'Rubik'; font-weight:400; font-style:normal;
+  src:url('/theme/fonts/Rubik-Regular.ttf') format('truetype'); font-display:swap; }
+@font-face { font-family:'Rubik'; font-weight:500; font-style:normal;
+  src:url('/theme/fonts/Rubik-Medium.ttf') format('truetype'); font-display:swap; }
+@font-face { font-family:'Rubik'; font-weight:700; font-style:normal;
+  src:url('/theme/fonts/Rubik-Bold.ttf') format('truetype'); font-display:swap; }
+@font-face { font-family:'Rubik'; font-weight:900; font-style:normal;
+  src:url('/theme/fonts/Rubik-Black.ttf') format('truetype'); font-display:swap; }
+@font-face { font-family:'Rubik'; font-weight:300; font-style:italic;
+  src:url('/theme/fonts/Rubik-LightItalic.ttf') format('truetype'); font-display:swap; }
+@font-face { font-family:'Rubik'; font-weight:400; font-style:italic;
+  src:url('/theme/fonts/Rubik-Italic.ttf') format('truetype'); font-display:swap; }
+@font-face { font-family:'Rubik'; font-weight:500; font-style:italic;
+  src:url('/theme/fonts/Rubik-MediumItalic.ttf') format('truetype'); font-display:swap; }
+@font-face { font-family:'Rubik'; font-weight:700; font-style:italic;
+  src:url('/theme/fonts/Rubik-BoldItalic.ttf') format('truetype'); font-display:swap; }
+@font-face { font-family:'Rubik'; font-weight:900; font-style:italic;
+  src:url('/theme/fonts/Rubik-BlackItalic.ttf') format('truetype'); font-display:swap; }
+
+:root {
+  --slidev-theme-primary: #0e9f73;
+  --dsv-green: #22f4ae;
+  --dsv-cyan: #00c8ff;
+  --dsv-yellow: #ffee32;
+  --dsv-teal: #4fe3c8;
+}
+
+#slidev-goto-dialog {
+  display: none !important;
+}
+
+h1 {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+h2,
+h3 {
+  font-weight: 700;
+}
+
+.subtitle {
+  opacity: 0.7;
+  margin-top: -0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.mark-green,
+.mark-yellow {
+  padding: 0 0.25em;
+  font-weight: 700;
+  color: #000;
+}
+
+.mark-green {
+  background: var(--dsv-green);
+}
+
+.mark-yellow {
+  background: var(--dsv-yellow);
+}
+
+.card {
+  border-radius: 0.5rem;
+  padding: 1rem 1.2rem;
+  color: #000;
+  font-size: 0.85rem;
+}
+
+.card h4 {
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.card ul {
+  margin: 0.4rem 0 0;
+  font-size: 0.8rem;
+}
+
+.auto-rows-fr > .slidev-layout {
+  font-size: 1em;
+  padding: 2rem 2.5rem;
+}
+
+.auto-rows-fr > .slidev-layout h1 {
+  font-size: 1.8rem;
+  line-height: 1.15;
+}
+
+.auto-rows-fr > .slidev-layout li,
+.auto-rows-fr > .slidev-layout p {
+  line-height: 1.3;
+}
+
+.auto-rows-fr > .slidev-layout ul {
+  margin: 0.3rem 0 0.6rem;
+}
+
+.auto-rows-fr > .slidev-layout .subtitle {
+  margin-bottom: 0.8rem;
+}

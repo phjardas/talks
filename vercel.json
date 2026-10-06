@@ -11,6 +11,10 @@
     {
       "source": "/code-under-fire/(.*)",
       "destination": "/code-under-fire/index.html"
+    },
+    {
+      "source": "/digitale-souveraenitaet/(.*)",
+      "destination": "/digitale-souveraenitaet/index.html"
     }
   ]
 }

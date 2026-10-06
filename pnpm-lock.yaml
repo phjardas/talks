@@ -205,6 +205,25 @@ importers:
         specifier: ^0.4.0
         version: 0.4.0
 
+  talks/digitale-souveraenitaet:
+    dependencies:
+      '@slidev/theme-default':
+        specifier: latest
+        version: 0.25.0
+      slidev-addon-qrcode:
+        specifier: ^1.0.2
+        version: 1.0.2
+    devDependencies:
+      '@slidev/cli':
+        specifier: ^51.0.0
+        version: 51.8.2(@babel/parser@7.29.8)(@devframes/hub@0.9.19(crossws@0.4.12(srvx@1.0.4))(devframe@0.9.19(cac@7.0.0)(srvx@1.0.4)))(@nuxt/kit@3.21.11)(@types/markdown-it@14.2.0)(@types/node@22.20.2)(@vue/compiler-sfc@3.5.42)(cac@7.0.0)(crossws@0.4.12(srvx@1.0.4))(markdown-it-async@2.2.0)(playwright-chromium@1.63.0)(postcss@8.5.28)(rollup@4.63.2)(srvx@1.0.4)
+      playwright-chromium:
+        specifier: ^1.63.0
+        version: 1.63.0
+      shx:
+        specifier: ^0.4.0
+        version: 0.4.0
+
 packages:
 
   '@antfu/install-pkg@1.1.0':
